@@ -10,5 +10,5 @@ USER node
 WORKDIR /opt/node
 RUN mkdir node_modules
 
-# COPY --chown=node:node package*.json ./
-# RUN ["npm", "install"]
+COPY --chown=node:node package*.json ./
+RUN ["npm", "install"]
