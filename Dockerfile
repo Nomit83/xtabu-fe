@@ -13,4 +13,8 @@ WORKDIR /opt/node
 RUN mkdir node_modules
 
 COPY --chown=node:node package*.json ./
+<<<<<<< HEAD
 RUN ["pnpm", "install"]
+=======
+RUN ["npm", "install"]
+>>>>>>> a3f33a372c6b6dabad35078f9aaf1fe7a7fd3b69
